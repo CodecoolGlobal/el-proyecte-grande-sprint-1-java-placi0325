@@ -24,6 +24,11 @@ public class ProductController {
     public List<ProductDTO> getAllProducts(){
        return productService.getAllProducts();
     }
+
+    @GetMapping("/{id}")
+    public ProductDTO getProductByID(@PathVariable String id){
+        return productService.getProductByID(Integer.parseInt(id));
+    }
     @PostMapping
     public void addNewProduct(@RequestBody NewProductDTO productDTO){
         productService.addNewProduct(productDTO);

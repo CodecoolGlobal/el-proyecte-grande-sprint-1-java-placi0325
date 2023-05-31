@@ -5,12 +5,22 @@ public class Product {
     private String name;
     private String description;
     private int userID;
+    private double price;
 
-    public Product(int id, String name, String description, int userID) {
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    public Product(int id, String name, String description, int userID, double price) {
         this.id = id;
         this.name = name;
         this.description = description;
         this.userID = userID;
+        this.price = price;
     }
 
     public int getId() {
