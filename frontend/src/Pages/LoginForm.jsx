@@ -11,7 +11,13 @@ const LoginForm = (user) => {
   };
 
   return (
-    <form className="SignUpForm" onSubmit={onSubmit}>
+    <div className="formholder">
+      <style>
+        @import
+        url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+      </style>
+    <form className="signupform" onSubmit={onSubmit}>
+      <h1 className="header">Log in</h1>
       {user && <input type="hidden" name="_id" defaultValue={user._id} />}
 
       <div className="control">
@@ -33,12 +39,13 @@ const LoginForm = (user) => {
       </div>
 
       <div className="buttons">
-        <button type="submit">Login </button>
-        <button type="button" onClick={onCancel}>
+        <button className="button" type="submit">Login </button>
+        <button className="button" type="button" onClick={onCancel}>
           Cancel
         </button>
       </div>
     </form>
+    </div>
   );
 };
 
