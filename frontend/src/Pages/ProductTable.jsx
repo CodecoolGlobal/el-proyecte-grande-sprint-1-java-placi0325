@@ -1,3 +1,5 @@
+import ProductLayoutInList from "../Components/ProductLayoutInList";
+
 const ProductTable = ( { products } ) => {
 
     return (
@@ -11,16 +13,15 @@ const ProductTable = ( { products } ) => {
             <tbody>
               {products.map((product) => (
                 <tr key={product.id}>
-                  <td>{product.name}</td>
-                  <td>{product.description}</td>
-                  <td>{product.userId}</td>
+                 <td>
+                 <ProductLayoutInList product={product} />
+                  </td> 
                 </tr>
               ))}
             </tbody>
           </table>
         </div>
         )
-    
 }
 
 export default ProductTable;

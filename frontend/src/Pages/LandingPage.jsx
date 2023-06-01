@@ -6,8 +6,8 @@ const LandingPage = () => {
   return (
     <div className="landingPage">
       
-      <img src={logo} alt="logo"></img>
-      <h1>Welcome to PreLoved!</h1>
+      <img src={logo} alt="logo"className="image"></img>
+      <h1 className="welcometext">Welcome to PreLoved!</h1>
       <div className="buttonContainer">
       <Link to={"/signup"}>
         <button type="button" className="landingButton">Sign up</button>
