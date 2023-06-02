@@ -5,10 +5,6 @@ import { Link } from "react-router-dom";
 const LandingPage = () => {
   return (
     <div className="landingPage">
-      <style>
-        @import
-        url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
-      </style>
       <img src={logo} alt="logo"className="image"></img>
       <h1 className="welcometext">Welcome to PreLoved!</h1>
       <div className="buttonContainer">
