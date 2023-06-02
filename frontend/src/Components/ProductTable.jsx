@@ -1,5 +1,5 @@
 import ProductLayoutInList from "./ProductLayoutInList";
-import "../ProductList.css"
+import "../css/ProductList.css"
 
 const ProductTable = ( { products } ) => {
 

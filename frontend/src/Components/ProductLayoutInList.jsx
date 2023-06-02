@@ -1,6 +1,4 @@
-import { useState } from "react";
-import Loading from "../Pages/Loading/Loading";
-import "../ProductList.css"
+import "../css/ProductList.css"
 
 const ProductLayoutInList = ( { product }) => {
 

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Loading from "./Loading/Loading";
-import ProductTable from "./ProductTable";
-import "../ProductList.css"
+import ProductTable from "../Components/ProductTable";
+import "../css/ProductList.css";
 
 const fetchProducts = (signal) => {
   return fetch("/products", { signal }).then((res) => res.json());
